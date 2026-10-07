@@ -187,6 +187,7 @@ function handleContactShelter(pPetId: number): void {
           v-for="match in recommendationStore.matches"
           :key="match.petId"
           :match="match"
+          :adopter-narrative="formData.lifestyleNarrative"
           @contact-shelter="handleContactShelter"
         />
       </div>

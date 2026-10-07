@@ -4,6 +4,7 @@ import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 // Views das Features
 import RecommendationView from '@/features/recommendation/views/RecommendationView.vue';
 import PetCatalogView from '@/features/pet/views/PetCatalogView.vue';
+import ShelterDashboardView from '@/features/pet/views/ShelterDashboardView.vue';
 
 const routes: RouteRecordRaw[] = [
   {
@@ -19,6 +20,11 @@ const routes: RouteRecordRaw[] = [
     path: '/pets',
     name: 'pet-catalog',
     component: PetCatalogView,
+  },
+  {
+    path: '/shelter',
+    name: 'shelter-dashboard',
+    component: ShelterDashboardView,
   },
 ];
 
